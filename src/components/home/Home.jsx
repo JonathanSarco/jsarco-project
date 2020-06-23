@@ -10,11 +10,11 @@ export const Home = () => {
     const [color, setColor] = useState('red') 
 
     function changeColor() {
-        setColor('white');
+        setColor('white'); 
     }
 
     return (
-        <Section id="home" fullHeight={ height } selectedColor={ color }>
+        <Section id='home' alt='home' fullHeight={ height } selectedColor={ color }>
             <Container fluid>
             <Row className="justify-content-center align-items-center">
                 <Col xs={2} />
