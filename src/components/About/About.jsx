@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import { Section, Building, CardBoot } from './styles';
-import { useWindowsDimensions } from '../hooks/useWindowsDimesions';
+import { useWindowsDimensions } from '../Hooks/useWindowsDimesions';
 
 export const About = () => {
     const { height } = useWindowsDimensions();

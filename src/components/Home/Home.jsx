@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import { AnimatedHook } from '../animation/AnimatedHook';
-import { useWindowsDimensions } from '../hooks/useWindowsDimesions'
+import { AnimatedHook } from '../Animation/AnimatedHook';
+import { useWindowsDimensions } from '../Hooks/useWindowsDimesions'
 import { Section, BoxContainer, ColBootstrap, WrapperDiv } from './styles';
 
 export const Home = () => {
@@ -13,11 +13,13 @@ export const Home = () => {
         <Section id='home' alt='home' fullHeight={height} selectedColor={color}>
             <Container fluid>
                 <Row className=''>
+                    
                     <ColBootstrap xs={8} fullHeight={height} className='d-flex align-items-center'>
                         <BoxContainer>
                             <AnimatedHook />
                         </BoxContainer>
                     </ColBootstrap>
+                    
                     <ColBootstrap fullHeight={height} className='d-flex align-items-center justify-content-center'>
                         <WrapperDiv className='text-center'>
                             <h1>Hi!</h1>
@@ -25,6 +27,7 @@ export const Home = () => {
                             <p className='main-text'>I am just testing React :)</p>
                         </WrapperDiv>
                     </ColBootstrap>
+                
                 </Row>
             </Container>
         </Section>

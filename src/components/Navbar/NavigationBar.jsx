@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Nav from 'react-bootstrap/Nav'
 import { CustomNavBar } from './styles.js'
-import { useScrollHandler } from '../hooks/useScrollHandler.jsx';
+import { useScrollHandler } from '../Hooks/useScrollHandler.jsx';
 
 export const NavigationBar = () => {
     const [selected, setSelected] = useState({
@@ -20,15 +20,15 @@ export const NavigationBar = () => {
     }
 
     return(
-    <CustomNavBar id="navbar">
-        <Nav className="nav-menu flex-column">
-            <Nav.Item className="nav-item" onClick={() => setSelected({ref: 'home'})}>
-                <Link to="/#home" className={`dot ${isActive('home') ? 'active' : ''}`}>
+    <CustomNavBar id='navbar'>
+        <Nav className='nav-menu flex-column'>
+            <Nav.Item className='nav-item' onClick={() => setSelected({ref: 'home'})}>
+                <Link to='/#home' className={`dot ${isActive('home') ? 'active' : ''}`}>
                     <span>Home</span>
                 </Link>
             </Nav.Item>
-            <Nav.Item className="nav-item" onClick={() => setSelected({ref: 'about'})}>
-                <Link to="/#about" className={`dot ${isActive('about') ? 'active' : ''}`}>
+            <Nav.Item className='nav-item' onClick={() => setSelected({ref: 'about'})}>
+                <Link to='/#about' className={`dot ${isActive('about') ? 'active' : ''}`}>
                     <span>About</span>
                 </Link>
             </Nav.Item>

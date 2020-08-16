@@ -20,7 +20,6 @@ export const Section = styled.section`
 `;
 
 export const BoxContainer = styled(Container)`
-    border: 1px solid white;
     align-items: center;
     width: 50%
 `;

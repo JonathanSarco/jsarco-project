@@ -4,7 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
-import App from './components/app/App';
+import App from './components/App/App';
 
 ReactDOM.render(
     <React.StrictMode>
