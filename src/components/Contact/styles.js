@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
+import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button';
+import backgroundImage from '../../images/contact-back.jpeg';
 
 export const Section = styled.section`
     padding: 10em 0;
-    height: ${props => props.fullHeight}px;
-    background-color: #181818;
+    background-image: url(${backgroundImage});  
+    background-repeat: repeat;
 `;
 
 export const CardBox = styled(Card)`    
     padding: 30px;
     border-radius: 15px;
     border-color: white;
-    background-color: #181818;
+    background-color: transparent;
 `;
 
 export const Title = styled.h2`
@@ -48,7 +51,7 @@ export const TextContainer = styled.div`
 export const MessageBox = styled(Form.Control)`
     padding-top: 10px;
     resize: none;    
-    background-color: #181818;
+    background-color: transparent;
     width: 100%;
     border-color: white;
     border-radius: 0px;
@@ -59,14 +62,29 @@ export const MessageBox = styled(Form.Control)`
     padding-left: 5px;
 
     &:focus {
-        background-color: #181818;
+        background-color: transparent;
         border-color: white;
         box-shadow: 0 0 0 0.1rem white;
     }
 `;
 
 export const ButtonContainer = styled.div`
-    margin-top: 10px;    
+    margin-top: 10px;
     width: 100%;
     text-align: right
+`;
+
+export const CustomButton = styled(Button)`
+    color: white;
+`;
+
+export const NetContainer = styled.div`
+    width: 100%;
+    margin-top: 10px;
+`;
+
+export const CustomImage = styled(Image)`
+    background-color: ${props => props.color};
+    width: 70px;
+    height: 70px;
 `;

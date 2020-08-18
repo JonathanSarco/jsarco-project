@@ -1,7 +1,7 @@
 import React from 'react';
 import { Composition } from 'atomic-layout';
 import { formTemplate } from '../templates';
-import { Form, Col, Button } from 'react-bootstrap'
+import { Form, Col } from 'react-bootstrap'
 import { 
     CardBox, 
     Title, 
@@ -11,6 +11,7 @@ import {
     TextContainer, 
     ButtonContainer,
     MessageBox, 
+    CustomButton,
 } from '../styles';
 
 export const OForm = () =>
@@ -50,7 +51,7 @@ export const OForm = () =>
                         </Form>
                         <SubmitArea flex flexDirection='column'>
                             <ButtonContainer >
-                                <Button variant='outline-secondary'>Send</Button>{' '}
+                                <CustomButton variant='outline-secondary'>Send</CustomButton>{' '}
                             </ButtonContainer>
                         </SubmitArea>
                     </CardBox>
