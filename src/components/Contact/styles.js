@@ -8,7 +8,7 @@ import backgroundImage from '../../images/contact-back.jpeg';
 export const Section = styled.section`
     padding: 10em 0;
     background-image: url(${backgroundImage});  
-    background-repeat: repeat;
+    background-size: contain;
 `;
 
 export const CardBox = styled(Card)`    
